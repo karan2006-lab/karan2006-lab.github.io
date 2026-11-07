@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karanpreet Singh | Founder, Product, Drone Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fb;--ink:#0b1626;--mut:#566883;--card:rgba(255,255,255,.72);--bd:rgba(11,22,38,.1);--acc:#d2440b;--acc2:#1f63e6;--on:#fff;--sans:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;--body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#060d18;--ink:#eaf1fa;--mut:#93a4bb;--card:rgba(255,255,255,.05);--bd:rgba(255,255,255,.11);--acc:#ff7a3d;--acc2:#5a96ff;--on:#1b0b03;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#060d18;--ink:#eaf1fa;--mut:#93a4bb;--card:rgba(255,255,255,.05);--bd:rgba(255,255,255,.11);--acc:#ff7a3d;--acc2:#5a96ff;--on:#1b0b03;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--acc);color:var(--on)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 75%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{width:min(92%,1120px);margin:0 auto}
+.bg{position:fixed;inset:0;z-index:-1;overflow:clip;pointer-events:none}
+.bg::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 15%,#000 10%,transparent 68%);mask-image:radial-gradient(ellipse at 50% 15%,#000 10%,transparent 68%)}
+.bl{position:absolute;border-radius:50%;filter:blur(90px);opacity:.2;animation:drift 20s ease-in-out infinite alternate}
+.b1{width:46vmax;height:46vmax;left:-14vmax;top:-16vmax;background:var(--acc)}
+.b2{width:42vmax;height:42vmax;right:-14vmax;top:18vmax;background:var(--acc2);animation-delay:-8s}
+@keyframes drift{to{transform:translate(6vmax,5vmax) scale(1.15)}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 75%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;font:600 .95rem var(--sans)}
+.bar{position:absolute;left:0;bottom:0;height:2px;width:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));transform:scaleX(0);transform-origin:left}
+nav{display:flex;gap:1.5rem;align-items:center}
+nav a:not(.k){opacity:.75;transition:opacity .3s}
+nav a:not(.k):hover{opacity:1}
+#tg{width:34px;height:34px;border:1px solid var(--bd);border-radius:50%;background:var(--card);color:var(--ink);font-size:1rem;cursor:pointer;transition:transform .5s,border-color .3s}
+#tg:hover{transform:rotate(180deg);border-color:var(--acc)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:2rem;min-height:calc(100svh - 56px);padding:2rem 0 3rem}
+.badge{display:inline-flex;align-items:center;gap:.6rem;font:500 .9rem var(--body);padding:.45rem 1rem;border:1px solid var(--bd);border-radius:999px;background:var(--card);backdrop-filter:blur(10px);margin:0 0 1.4rem}
+.badge i{width:8px;height:8px;border-radius:50%;background:#2ecc71;box-shadow:0 0 0 0 rgba(46,204,113,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(46,204,113,0)}100%{box-shadow:0 0 0 0 rgba(46,204,113,0)}}
+h1{font:700 clamp(3.2rem,9.4vw,7rem)/.95 var(--sans);letter-spacing:-.05em;margin:0}
+.ln{display:block;overflow:hidden;padding:0 0 .1em}
+.ln span{display:inline-block;transform:translateY(105%);animation:up 1s cubic-bezier(.2,.8,.2,1) forwards;background:linear-gradient(100deg,var(--ink) 35%,var(--acc) 75%,var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ln:nth-child(2) span{animation-delay:.14s}
+@keyframes up{to{transform:none}}
+.role{font:600 clamp(1.3rem,3vw,1.9rem)/1.3 var(--sans);letter-spacing:-.02em;margin:1.2rem 0 0}
+.rot{display:inline-grid;vertical-align:bottom;overflow:hidden;color:var(--acc)}
+.rot b{grid-area:1/1;opacity:0;transform:translateY(70%);animation:rot 9s infinite}
+.rot b:nth-child(2){animation-delay:3s}.rot b:nth-child(3){animation-delay:6s}
+@keyframes rot{0%{opacity:0;transform:translateY(70%)}6%,30%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateY(-70%)}}
+.lede{max-width:33em;margin:1.2rem 0 1.8rem;color:var(--mut);font-size:1.12rem}
+.hero .in-seq{opacity:0;animation:fade .9s forwards}
+@keyframes fade{to{opacity:1}}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;font:600 1rem var(--sans);padding:.9rem 1.6rem;border-radius:999px;border:1px solid var(--bd);background:var(--card);backdrop-filter:blur(10px);transition:transform .3s,border-color .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);border-color:var(--acc)}
+.pri{background:linear-gradient(100deg,var(--acc),color-mix(in srgb,var(--acc) 55%,var(--acc2)));color:var(--on);border-color:transparent;box-shadow:0 12px 32px -12px var(--acc)}
+.radar{position:relative;width:min(100%,460px);aspect-ratio:1;margin-inline:auto}
+.radar svg{width:100%;height:100%;overflow:visible}
+.rg{fill:none;stroke:color-mix(in srgb,var(--ink) 18%,transparent);stroke-width:1}
+.orb{fill:none;stroke:var(--acc2);stroke-width:1.5;stroke-dasharray:3 9;transform-origin:200px 200px;animation:spin 40s linear infinite reverse}
+.sweep{transform-origin:200px 200px;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.blip{fill:var(--acc);transform-box:fill-box;transform-origin:center;animation:blip 3s ease-in-out infinite}
+@keyframes blip{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.4)}}
+.dr line,.dr path{stroke:var(--ink);stroke-width:3;stroke-linecap:round;fill:none}
+.dr .bd{fill:var(--ink)}
+.dr .dc{fill:color-mix(in srgb,var(--acc) 25%,transparent);stroke:var(--acc);stroke-width:1.5}
+.bld{stroke:var(--acc)!important;stroke-width:2.5!important;transform-box:fill-box;transform-origin:center;animation:spin .4s linear infinite}
+.dr{animation:hover 4s ease-in-out infinite}
+@keyframes hover{50%{transform:translateY(-6px)}}
+.tag{position:absolute;display:flex;align-items:center;gap:.5rem;font:600 .9rem var(--sans);padding:.5rem .9rem;border-radius:999px;border:1px solid var(--bd);background:var(--card);backdrop-filter:blur(12px);animation:flt 5s ease-in-out infinite}
+.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--acc)}
+.t1{left:0;top:16%}.t2{right:-2%;top:48%;animation-delay:-1.6s}.t3{left:8%;bottom:8%;animation-delay:-3.2s}
+@keyframes flt{50%{transform:translateY(-9px)}}
+.mq{overflow:hidden;border-block:1px solid var(--bd);padding:1rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mt{display:flex;width:max-content;gap:2.4rem;animation:mq 34s linear infinite;font:600 1.05rem var(--sans);color:var(--mut)}
+.mt span{display:flex;align-items:center;gap:2.4rem;white-space:nowrap}
+.mt span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc)}
+.mq:hover .mt{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sec{padding:6rem 0 0}
+.hd{display:flex;align-items:center;gap:1.2rem;margin:0 0 2.2rem}
+.hd h2{font:700 clamp(2rem,5vw,3.2rem)/1 var(--sans);letter-spacing:-.04em;margin:0}
+.hd::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--acc),var(--bd) 40%,transparent);transform:scaleX(0);transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.7,.2,1) .2s}
+.hd.in::after{transform:scaleX(1)}
+.r{opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.r.in{opacity:1;transform:none}
+.glass{position:relative;background:var(--card);border:1px solid var(--bd);border-radius:24px;padding:1.8rem;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);overflow:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .4s}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(380px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--acc) 20%,transparent),transparent 65%);opacity:0;transition:opacity .35s;pointer-events:none}
+.glass:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--acc) 55%,var(--bd))}
+.glass:hover::before{opacity:1}
+.glass>*{position:relative}
+.about{font:500 clamp(1.3rem,2.8vw,1.9rem)/1.45 var(--sans);letter-spacing:-.02em;max-width:30em;margin:0 0 2.5rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat b{display:block;font:700 clamp(2.4rem,5vw,3.6rem)/1 var(--sans);letter-spacing:-.05em;background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat b i{font-style:normal}
+.stat span{display:block;margin-top:.5rem;color:var(--mut);font-size:.95rem;line-height:1.45}
+.tl{position:relative;padding-left:2.6rem;display:grid;gap:1.2rem}
+.tl::before,.tl::after{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;border-radius:2px}
+.tl::before{background:var(--bd)}
+.tl::after{background:linear-gradient(var(--acc),var(--acc2));box-shadow:0 0 14px var(--acc);transform:scaleY(0);transform-origin:top;transition:transform 2s cubic-bezier(.2,.7,.2,1) .2s}
+.tl.in::after{transform:scaleY(1)}
+.dot{position:absolute!important;left:calc(-2.6rem - 5px);top:2.2rem;width:12px;height:12px;border-radius:50%;background:var(--acc);animation:ring 2.4s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--acc) 60%,transparent)}80%,100%{box-shadow:0 0 0 12px transparent}}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:.8rem}
+h3{font:600 clamp(1.3rem,2.6vw,1.7rem)/1.2 var(--sans);letter-spacing:-.025em;margin:0}
+.org{margin:.2rem 0 0;color:var(--acc);font:600 1rem var(--sans)}
+.date{font:500 .85rem var(--body);padding:.3rem .8rem;border-radius:999px;border:1px solid var(--bd);color:var(--mut);white-space:nowrap}
+.glass p{margin:.9rem 0 0;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+.chip{font:500 .86rem var(--body);padding:.32rem .8rem;border:1px solid var(--bd);border-radius:999px;background:color-mix(in srgb,var(--ink) 4%,transparent);transition:background .3s,color .3s,transform .3s,border-color .3s}
+.chip:hover{background:var(--acc);color:var(--on);border-color:var(--acc);transform:translateY(-2px)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}
+.s4{grid-column:span 4}.s2{grid-column:span 2}.s6{grid-column:span 6}
+.mesh{width:100%;height:auto;margin-top:1rem;overflow:visible}
+.lk path{fill:none;stroke:var(--acc2);stroke-width:1.6;stroke-dasharray:4 6;animation:flow 1.2s linear infinite}
+.gl{fill:none;stroke:var(--bd);stroke-width:1.5}
+@keyframes flow{to{stroke-dashoffset:-20}}
+.sg{fill:none;stroke:var(--acc);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:ping 2.6s ease-out infinite}
+.sg.b{animation-delay:1.3s}
+@keyframes ping{0%{opacity:.9;transform:scale(.5)}100%{opacity:0;transform:scale(3)}}
+.hub{fill:var(--acc)}.nd{fill:var(--acc2)}
+.medal{width:84px;height:auto;display:block;margin:.2rem 0 .6rem;transform-origin:50% 0;animation:sway 4s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.6rem;text-align:center}
+.steps::before{content:"";position:absolute;left:16%;right:16%;top:11px;height:2px;background:linear-gradient(90deg,var(--acc),var(--acc2));transform:scaleX(0);transform-origin:left;transition:transform 1.6s cubic-bezier(.2,.7,.2,1) .3s}
+.in .steps::before{transform:scaleX(1)}
+.steps div{font:600 1rem var(--sans)}
+.steps div::before{content:"";display:block;width:24px;height:24px;margin:0 auto .6rem;border-radius:50%;background:var(--bg);border:2px solid var(--acc);position:relative;z-index:1}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
+.cols h3{font-size:1.2rem}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1rem}
+.yr{display:inline-block;font:600 .85rem var(--sans);color:var(--acc);margin-bottom:.8rem}
+.panel{position:relative;overflow:hidden;border-radius:32px;padding:clamp(2rem,7vw,5rem);border:1px solid var(--bd);background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 24%,var(--bg)),color-mix(in srgb,var(--acc2) 24%,var(--bg)))}
+.panel::after{content:"";position:absolute;width:30rem;height:30rem;right:-10rem;top:-12rem;border-radius:50%;background:radial-gradient(color-mix(in srgb,var(--ink) 18%,transparent),transparent 65%);animation:drift 12s ease-in-out infinite alternate}
+.panel>*{position:relative;z-index:1}
+.cta{font:700 clamp(2rem,5.4vw,4rem)/1.05 var(--sans);letter-spacing:-.045em;margin:0 0 2rem;max-width:14em}
+footer{padding:3rem 0;font-size:.95rem;color:var(--mut)}
+@media (max-width:900px){.hero{grid-template-columns:1fr;min-height:0;padding-top:1rem}.radar{width:min(100%,380px)}.s4,.s2{grid-column:span 6}.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:720px){nav a:not(.k){display:none}.sec{padding-top:4.5rem}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.ln span{transform:none}.hero .in-seq,.r{opacity:1;transform:none}.rot b:first-child{opacity:1;transform:none}.hd::after,.tl::after,.steps::before{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="bl b1"></div><div class="bl b2"></div></div>
+<header>
+  <div class="wrap">
+    <a class="k" href="#top" aria-label="Back to top">Karanpreet Singh</a>
+    <nav aria-label="Sections">
+      <a href="#experience">Experience</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#education">Education</a><a class="k" href="#contact">Contact</a>
+      <button id="tg" aria-label="Toggle light and dark theme">◐</button>
+    </nav>
+  </div>
+  <div class="bar" id="bar"></div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <p class="badge in-seq" style="animation-delay:.1s"><i></i>Open to opportunities in Ludhiana</p>
+    <h1><span class="ln"><span>Karanpreet</span></span><span class="ln"><span>Singh</span></span></h1>
+    <p class="role in-seq" style="animation-delay:.6s">I’m a <span class="rot"><b>founder</b><b>technical product manager</b><b>drone technologist</b></span></p>
+    <p class="lede in-seq" style="animation-delay:.8s">I run a premium kidswear brand, manage retail operations and train with the NCC Air Wing, applying product thinking to all three.</p>
+    <div class="btns in-seq" style="animation-delay:1s"><a class="btn pri" href="#experience">See my experience</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+  <div class="radar in-seq" style="animation-delay:.4s" aria-hidden="true">
+    <svg viewBox="0 0 400 400">
+      <defs><linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--acc)" stop-opacity="0"/><stop offset="1" stop-color="var(--acc)" stop-opacity=".5"/></linearGradient></defs>
+      <circle class="rg" cx="200" cy="200" r="70"/><circle class="rg" cx="200" cy="200" r="130"/><circle class="rg" cx="200" cy="200" r="190"/><path class="rg" d="M200 10V390M10 200H390"/>
+      <circle class="orb" cx="200" cy="200" r="160"/>
+      <g class="sweep"><path d="M200 200L200 10A190 190 0 0 1 334.4 65.6Z" fill="url(#sw)"/></g>
+      <circle class="blip" cx="290" cy="120" r="4"/><circle class="blip" cx="120" cy="290" r="4" style="animation-delay:-1s"/><circle class="blip" cx="300" cy="270" r="4" style="animation-delay:-2s"/>
+      <g class="dr" transform="translate(200 200)">
+        <path d="M-30-30L30 30M30-30L-30 30"/><rect class="bd" x="-13" y="-13" width="26" height="26" rx="8"/>
+        <g transform="translate(-30 -30)"><circle class="dc" r="15"/><path class="bld" d="M-13 0H13"/></g>
+        <g transform="translate(30 -30)"><circle class="dc" r="15"/><path class="bld" d="M-13 0H13"/></g>
+        <g transform="translate(-30 30)"><circle class="dc" r="15"/><path class="bld" d="M-13 0H13"/></g>
+        <g transform="translate(30 30)"><circle class="dc" r="15"/><path class="bld" d="M-13 0H13"/></g>
+      </g>
+    </svg>
+    <span class="tag t1">Build</span><span class="tag t2">Map</span><span class="tag t3">Pilot</span>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mt">
+  <span>Product management</span><span>Strategic planning</span><span>Drone piloting</span><span>Store operations</span><span>User stories</span><span>Drone mapping</span><span>Business ownership</span><span>Consumer behavior</span>
+  <span>Product management</span><span>Strategic planning</span><span>Drone piloting</span><span>Store operations</span><span>User stories</span><span>Drone mapping</span><span>Business ownership</span><span>Consumer behavior</span>
+</div></div>
+
+<div class="wrap">
+  <section class="sec" id="about">
+    <p class="about r">I turn plans into working systems. At K’n’K Collection I own planning, operations and customer experience end to end. In the NCC Air Wing I train on drones, from building to mapping to piloting.</p>
+    <div class="stats">
+      <div class="glass stat r"><b><i data-to="3">0</i>+</b><span>Years in retail operations</span></div>
+      <div class="glass stat r" style="--d:.1s"><b><i data-to="30">0</i>+</b><span>Skills across product, business and drones</span></div>
+      <div class="glass stat r" style="--d:.2s"><b><i data-to="2">0</i></b><span>Active roles, founder and shop manager</span></div>
+      <div class="glass stat r" style="--d:.3s"><b><i data-to="1">0</i></b><span>Gold medal at an NCC drone camp</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <div class="hd r"><h2>Experience</h2></div>
+    <div class="tl r">
+      <article class="glass"><span class="dot"></span>
+        <div class="top"><div><h3>Founder and shop owner</h3><p class="org">K’n’K Collection</p></div><span class="date">May 2026 to present</span></div>
+        <p>Founded and run a premium kidswear store carrying multiple brands across all age groups. I own product planning, inventory, store operations and the customer experience.</p>
+        <div class="chips"><span class="chip">Business ownership</span><span class="chip">Product planning</span><span class="chip">Store management</span><span class="chip">Product operations</span></div>
+      </article>
+      <article class="glass"><span class="dot"></span>
+        <div class="top"><div><h3>Shop manager, part-time</h3><p class="org">Rajan Jeans Gallery</p></div><span class="date">March 2023 to present</span></div>
+        <p>Responsible for sales and daily store operations. This is the hands-on grounding behind the product and operations decisions I make in my own business.</p>
+        <div class="chips"><span class="chip">Product management</span><span class="chip">Product planning</span><span class="chip">Product leadership</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="hd r"><h2>Selected work</h2></div>
+    <div class="bento">
+      <article class="glass s4 r">
+        <h3>Project Vayu-Net</h3><p class="org">UAV disaster-relief communications</p>
+        <p>A drone-enabled communications system designed to keep relief teams connected when ground networks fail, developed for NCC competition.</p>
+        <svg class="mesh" viewBox="0 0 300 140" aria-hidden="true">
+          <path class="gl" d="M40 112L110 120L190 120L262 110"/>
+          <g class="lk"><path d="M150 26L40 112"/><path d="M150 26L110 120"/><path d="M150 26L190 120"/><path d="M150 26L262 110"/></g>
+          <circle class="sg" cx="150" cy="26" r="10"/><circle class="sg b" cx="150" cy="26" r="10"/>
+          <circle class="hub" cx="150" cy="26" r="7"/>
+          <circle class="nd" cx="40" cy="112" r="5"/><circle class="nd" cx="110" cy="120" r="5"/><circle class="nd" cx="190" cy="120" r="5"/><circle class="nd" cx="262" cy="110" r="5"/>
+        </svg>
+      </article>
+      <article class="glass s2 r" style="--d:.1s">
+        <svg class="medal" viewBox="0 0 80 100" aria-hidden="true"><defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe08a"/><stop offset="1" stop-color="#c78a1f"/></linearGradient></defs><path d="M22 0h14l8 34H28zM58 0H44l-8 34h14z" fill="var(--acc2)"/><circle cx="40" cy="64" r="28" fill="url(#gd)"/><circle cx="40" cy="64" r="21" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/><path d="M40 50l4.5 9.5 10.5 1.4-7.7 7.2 2 10.4L40 73l-9.3 5.5 2-10.4-7.7-7.2 10.5-1.4z" fill="#fff" fill-opacity=".9"/></svg>
+        <h3>NCC Air Wing</h3><p class="org">Cadet, 4 Punjab Air Squadron</p>
+        <p>Gold medalist at an NCC drone training camp. Responsibilities span training, administration and competition preparation.</p>
+      </article>
+      <article class="glass s6 r" style="--d:.1s">
+        <h3>Drone technology</h3><p class="org">The full chain, hands-on</p>
+        <div class="steps"><div>Drone building</div><div>Drone mapping</div><div>Drone piloting</div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="skills">
+    <div class="hd r"><h2>Skills</h2></div>
+    <div class="cols">
+      <article class="glass r"><h3>Product</h3><div class="chips"><span class="chip">Product management</span><span class="chip">Product planning</span><span class="chip">Product leadership</span><span class="chip">Product operations</span><span class="chip">Strategic planning</span><span class="chip">User personas</span><span class="chip">User stories</span><span class="chip">Consumer behavior</span></div></article>
+      <article class="glass r" style="--d:.1s"><h3>Business</h3><div class="chips"><span class="chip">Business ownership</span><span class="chip">Business management</span><span class="chip">Store management</span><span class="chip">Inventory</span><span class="chip">Business communications</span><span class="chip">Accounting</span><span class="chip">GST</span><span class="chip">Billing</span></div></article>
+      <article class="glass r" style="--d:.2s"><h3>Drones</h3><div class="chips"><span class="chip">Drone building</span><span class="chip">Drone mapping</span><span class="chip">Drone piloting</span></div></article>
+      <article class="glass r" style="--d:.3s"><h3>Tools</h3><div class="chips"><span class="chip">Microsoft Excel</span><span class="chip">Tally ERP</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Web design</span><span class="chip">PowerPoint</span><span class="chip">Word</span><span class="chip">Desktop publishing</span></div></article>
+    </div>
+  </section>
+
+  <section class="sec" id="education">
+    <div class="hd r"><h2>Education</h2></div>
+    <div class="edu">
+      <article class="glass r"><span class="yr">2025 to 2028</span><h3>Bachelor of Computer Applications</h3><p class="org">S.C.D. Government College, Ludhiana</p><p>Computer Science, with the NCC Air Wing.</p></article>
+      <article class="glass r" style="--d:.1s"><span class="yr">January to June 2026</span><h3>Product Management certificate</h3><p class="org">GeeksforGeeks</p><p>Strategic planning, user personas, user stories and consumer behavior.</p></article>
+      <article class="glass r" style="--d:.2s"><span class="yr">May 2023 to May 2024</span><h3>Advance Diploma in Computer Applications</h3><p class="org">UCIT, Grade A</p><p>Accounting, GST, Tally ERP, Excel, and web design with HTML and CSS.</p></article>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="panel r">
+      <p class="cta">Open to opportunities in Ludhiana, on-site or hybrid.</p>
+      <a class="btn pri" href="https://www.linkedin.com/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap">© 2026 Karanpreet Singh</div></footer>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function count(el){var to=+el.dataset.to,t0=null;if(rm){el.textContent=to;return}
+    function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1500);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}
+    requestAnimationFrame(f)}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-to]').forEach(count);io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.r').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('.glass').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+  var bar=document.getElementById('bar');
+  function sc(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'}
+  addEventListener('scroll',sc,{passive:true});sc();
+  var root=document.documentElement;
+  document.getElementById('tg').addEventListener('click',function(){
+    var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+    root.dataset.theme=dark?'light':'dark';
+  });
+})();
+</script>
+</body>
+</html>
